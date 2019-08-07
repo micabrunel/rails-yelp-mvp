@@ -1,0 +1,9 @@
+<h1>Yelp MVC</h1>
+<h2>Restaurants list :</h2>
+<ul>
+   <li> <% @restaurants.each do |restaurant| %>
+  <p><%= link_to restaurant.name %>, <%= restaurant.address %> | <%= restaurant.category %></p>
+  <% end %>
+  </li>
+
+</ul>
